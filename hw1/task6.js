@@ -1,23 +1,23 @@
 let total = 0;
 
 while (true) {
-    let input = prompt("Tap number");
+  let input = prompt("Tap number");
 
-    if (input === null){
-        console.log("canceled by user");
-        break;
-    }
+  if (input === null) {
+    console.log("canceled by user");
+    break;
+  }
 
-    input = Number(input);
+  input = Number(input);
 
-    const notANumber = Number.isNaN(input);
+  const notANumber = Number.isNaN(input);
 
-    if (notANumber) {
-        console.log('not true');
-        continue;
-    }
+  if (notANumber) {
+    console.log("not true");
+    continue;
+  }
 
-    total += input;
+  total += input;
 }
 
 console.log(total);
